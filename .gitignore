@@ -456,5 +456,3 @@ appsettings.json
 .vscode/launch.json
 .vscode/tasks.json
 .gitignore
-API/datingapp.db-wal
-API/datingapp.db-shm
