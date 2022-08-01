@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Extensions;
 
 namespace API.Entities
 {
@@ -34,5 +35,10 @@ namespace API.Entities
         public string City { get; set; } // TO-DO: Use an Address object (will implement later)
 
         public ICollection<Photo> Photos { get; set; }
+
+        public int GetAge() 
+        {
+            return DateOfBirth.CalculateAge();
+        }
     }
 }
